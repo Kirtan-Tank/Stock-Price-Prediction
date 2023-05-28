@@ -1,7 +1,5 @@
 import streamlit as st
-import joblib
 import yfinance as yf
-import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 from tensorflow.keras.models import load_model
 

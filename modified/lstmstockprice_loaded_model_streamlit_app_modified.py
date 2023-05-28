@@ -6,7 +6,7 @@ from sklearn.preprocessing import MinMaxScaler
 from tensorflow.keras.models import load_model
 
 # Load the saved model
-model = load_model("C:\Program Files (x86)\.vscode\Projects\Stock Price LSTM\saved_model.h5")
+model = load_model("modified/saved_model.h5")
 
 # Set the page title
 st.title('Stock Price Prediction')

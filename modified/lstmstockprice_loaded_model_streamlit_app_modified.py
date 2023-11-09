@@ -13,12 +13,14 @@ st.title('Stock Price Prediction')
 stock_symbol = st.text_input('Enter stock symbol')
 
 # Get user input for start and end dates
-start_date = st.date_input('Enter start date')
-end_date = st.date_input('Enter end date')
+# start_date = st.date_input('Enter start date')
+# end_date = st.date_input('Enter end date')
 
 # Convert dates to the required format
-start_date_str = start_date.strftime('%Y-%m-%d')
-end_date_str = end_date.strftime('%Y-%m-%d')
+# start_date_str = start_date.strftime('%Y-%m-%d')
+start_date_str=st.input("Enter Start Date (YYYY-MM-DD Format)") 
+# end_date_str = end_date.strftime('%Y-%m-%d')
+end_date_str=st.input("Enter End Date (YYYY-MM-DD Format)") 
 
 # Fetch stock price data using yfinance
 stock_data = yf.download(stock_symbol, start=start_date_str, end=end_date_str)

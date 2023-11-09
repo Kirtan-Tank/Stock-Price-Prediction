@@ -18,9 +18,9 @@ stock_symbol = st.text_input('Enter stock symbol')
 
 # Convert dates to the required format
 # start_date_str = start_date.strftime('%Y-%m-%d')
-start_date_str=st.input("Enter Start Date (YYYY-MM-DD Format)") 
+start_date_str=st.text_input("Enter Start Date (YYYY-MM-DD Format)") 
 # end_date_str = end_date.strftime('%Y-%m-%d')
-end_date_str=st.input("Enter End Date (YYYY-MM-DD Format)") 
+end_date_str=st.text_input("Enter End Date (YYYY-MM-DD Format)") 
 
 # Fetch stock price data using yfinance
 stock_data = yf.download(stock_symbol, start=start_date_str, end=end_date_str)
